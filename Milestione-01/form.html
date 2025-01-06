@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <header></header>
@@ -16,6 +22,34 @@
           Your name
           <input id="name" type="text" placeholder="Your name" />
         </label>
+        <label for="email">
+          Your name
+          <input id="email" type="text" placeholder="Your email" />
+        </label>
+        <fieldset>
+          <legend>Pick Vortas</legend>
+          <label for="Potato">
+            <input type="checkbox" name="pitha" id="chitoy" />Chitoy
+          </label>
+          <label for="vapa">
+            <input type="checkbox" name="pitha" id="vapa" />Vapa
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Pick one pitha</legend>
+          <label for="chitoy">
+            <input type="radio" name="pitha" id="chitoy" />Chitoy
+          </label>
+          <label for="vapa">
+            <input type="radio" name="pitha" id="vapa" />Vapa
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Special Instructions</legend>
+          <textarea name="" id=""></textarea>
+        </fieldset>
+        <input type="reset" value="Reset" />
+        <input type="submit" value="submit" />
       </form>
     </section>
   </body>
