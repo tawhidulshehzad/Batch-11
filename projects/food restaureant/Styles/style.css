@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff&family=Fira+Code:wght@300..700&family=Fira+Sans+Condensed&family=Heebo:wght@400;500;600&family=Poppins:wght@400;500;600&family=Roboto:wght@700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url("/Assets/hero-bg.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 52px;
+  margin: 0;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+/* Second Section */
+
+.brands-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+
+  /* Flexbox for centering */
+  display: flex;
+  flex-direction: column; /* Stack the children vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Ensure text is centered */
+}
+
+.brands-section h4 {
+  font-size: 18px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.brands-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card .brand-name {
+  background-color: #e6f4ea;
+  color: #28a745;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
